@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Micro-SaaS Automáticos para .NET & Angular</title>
+    <!-- Tailwind CSS para un diseño moderno y limpio -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { background-color: white; color: black; }
+            .page-break { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Botón flotante para guardar (oculto al imprimir) -->
+    <div class="no-print fixed bottom-6 right-6 z-50">
+        <button onclick="window.print()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-200 flex items-center gap-2 cursor-pointer">
+            ✨ Guardar como PDF
+        </button>
+    </div>
+
+    <div class="max-w-4xl mx-auto p-6 sm:p-12">
+        
+        <!-- Encabezado Principal -->
+        <header class="border-b-4 border-indigo-600 pb-6 mb-8">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight sm:text-4xl">
+                        Estrategia Micro-SaaS 2026
+                    </h1>
+                    <p class="text-lg text-indigo-600 font-medium mt-1">
+                        10 Ideas de Negocio Automáticas para Vibe Coding
+                    </p>
+                </div>
+                <div class="text-right text-xs text-slate-500 hidden sm:block">
+                    <p><strong>Stack Objetivo:</strong></p>
+                    <p>.NET 8 | Angular | SQL</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Bloque de Enfoque Estratégico -->
+        <section class="bg-indigo-900 text-white rounded-xl p-6 mb-10 shadow-md">
+            <h2 class="text-xl font-bold mb-2 flex items-center gap-2">
+                🚀 Filosofía de Ejecución Rápida
+            </h2>
+            <p class="text-sm text-indigo-100 leading-relaxed">
+                Productos ultra-enfocados diseñados para que el backend (.NET Minimal APIs / Workers) haga el trabajo pesado en segundo plano. Cero infraestructuras complejas, inicio de sesión social para eliminar soporte técnico, y pasarelas globales automáticas (Stripe/Lemon Squeezy) conectadas por Webhooks. 
+                <strong class="text-yellow-300">Regla del equipo: MVP en 7 días flotando en internet.</strong>
+            </p>
+        </section>
+
+        <!-- Listado de Proyectos -->
+        <main class="space-y-6">
+
+            <!-- Proyecto 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">01</span>
+                    <h3 class="text-xl font-bold text-slate-900">Conector de Facturación Electrónica Local</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> El usuario asocia sus API Keys en Angular. Tu API en .NET recibe el webhook <code class="bg-slate-100 px-1 py-0.5 rounded text-xs">invoice.paid</code> de Stripe/Shopify, extrae los datos, y consume la API del proveedor local (Siigo, Alegra, etc.) para emitir la factura legal automáticamente.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Web API, Angular, Stripe.net, SQL.
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">02</span>
+                    <h3 class="text-xl font-bold text-slate-900">"Wrappers" de IA para Extracción de Datos B2B</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Interfaz Angular con Drag & Drop para PDFs. .NET extrae el texto crudo y lo envía a OpenAI usando el SDK oficial con la opción <em>Structured Outputs</em> (JSON estricto). Mapeas ese JSON directamente a un reporte Excel descargable.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: Angular standalone, Azure.AI.OpenAI, EPPlus / ClosedXML.
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">03</span>
+                    <h3 class="text-xl font-bold text-slate-900">Monitores de Precios y "Restock" B2B</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Un Worker Service en .NET corre en background de forma cíclica. Consulta portales mayoristas, hace scraping del HTML, compara valores con tu base de datos SQL y si hay cambios, gatilla alertas instantáneas a APIs de WhatsApp o Telegram.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Worker Service, HtmlAgilityPack, SQL Server/PostgreSQL.
+                </div>
+            </div>
+
+            <!-- Proyecto 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">04</span>
+                    <h3 class="text-xl font-bold text-slate-900">Automatizador de Respuestas a Reseñas con IA</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> El comercio conecta su Google Business vía OAuth. Tu Web API recibe notificaciones de nuevas reseñas en Maps. La IA (GPT-4o mini) redacta una respuesta optimizada con contexto comercial y SEO local, y el backend la publica automáticamente.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 API, Angular OAuth, Google.Apis.MyBusiness, OpenAI API.
+                </div>
+            </div>
+
+            <!-- Proyecto 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">05</span>
+                    <h3 class="text-xl font-bold text-slate-900">Copias de Seguridad Automáticas SaaS a SaaS</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Negocio de "conectar y olvidar". Quartz.NET agenda y dispara tareas automatizadas por usuario. El backend extrae la información de plataformas como Notion/Trello vía API, genera un archivo comprimido .zip en memoria y lo aloja en el Google Drive o OneDrive del cliente.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8, Quartz.NET, System.IO.Compression, Google Drive API.
+                </div>
+            </div>
+
+            <!-- Proyecto 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">06</span>
+                    <h3 class="text-xl font-bold text-slate-900">Acortador de Enlaces Dinámico y "Smart"</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> El marketer configura destinos en Angular según el país. Una Minimal API en .NET resuelve la IP de la petición entrante en milisegundos con una base de datos local, registra la analítica en segundo plano y responde con un redireccionamiento HTTP 302 inmediato.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Minimal APIs, MaxMind.GeoIP2, SQL (Asynchronous logging).
+                </div>
+            </div>
+
+            <!-- Proyecto 7 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">07</span>
+                    <h3 class="text-xl font-bold text-slate-900">Generador de PDFs Bajo Demanda vía API</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Microservicio puramente B2B. Otras aplicaciones envían un JSON estructurado a tu endpoint. Tu API inyecta los datos en plantillas HTML parametrizadas y usa un motor nativo de .NET para transformarlo a PDF y retornar la URL pública del archivo.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Web API, QuestPDF o DinkToPdf, Cloud Storage (S3/Azure Blobs).
+                </div>
+            </div>
+
+            <!-- Proyecto 8 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">08</span>
+                    <h3 class="text-xl font-bold text-slate-900">Validador Automático de Correos y Teléfonos</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Endpoint de validación para formularios de registro. El backend valida la estructura por Regex, cruza el dominio contra listas negras de correos temporales indexadas en SQL y ejecuta una consulta DNS rápida en caliente para garantizar registros MX reales.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Minimal APIs, System.Net.Dns, SQL Tables para Blacklists.
+                </div>
+            </div>
+
+            <!-- Proyecto 9 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">09</span>
+                    <h3 class="text-xl font-bold text-slate-900">Gateway de Notificaciones Multi-Canal</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> API que unifica canales de comunicación. Recibe un payload simple y despacha las alertas en paralelo usando programación asíncrona avanzada de .NET (<code class="bg-slate-100 px-1 py-0.5 rounded text-xs">Task.WhenAll</code>) hacia Twilio o SendGrid. Angular expone el dashboard analítico.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8, Angular, Twilio SDK, SendGrid/Resend API, SQL.
+                </div>
+            </div>
+
+            <!-- Proyecto 10 -->
+            <div class="bg-white p-6 rounded-xl shadow-xs border border-slate-200 page-break">
+                <div class="flex items-center gap-3 mb-3">
+                    <span class="bg-indigo-100 text-indigo-700 font-bold px-3 py-1 rounded-md text-sm">10</span>
+                    <h3 class="text-xl font-bold text-slate-900">Centralizador de Webhooks a Slack o Discord</h3>
+                </div>
+                <p class="text-sm text-slate-600 mb-4"><strong class="text-slate-900">Paso a Paso:</strong> Generas una URL dinámica en .NET para el cliente. Al recibir peticiones de cualquier SaaS, interceptas el body en crudo, deduces el remitente por sus encabezados, formateas la información en tarjetas JSON estéticas y la reenvías al chat del usuario.</p>
+                <div class="text-xs text-indigo-600 font-semibold bg-indigo-50/50 px-3 py-2 rounded-lg">
+                    🛠️ Componentes: .NET 8 Web API, Angular para panel de administración, Base de datos SQL.
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="mt-12 border-t border-slate-200 pt-6 text-center text-xs text-slate-400">
+            <p>Estrategia tecnológica generada para implementación y desarrollo ágil asistido por Inteligencia Artificial.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
