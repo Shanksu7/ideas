@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Especificación Técnica y de Mercado - Micro-SaaS para Equipo .NET & Angular</title>
+    <title>Master Blueprint: 10 Micro-SaaS para el Mercado Colombiano (.NET + Angular)</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
@@ -19,7 +19,7 @@
 
     <!-- Botón Flotante para Imprimir / Guardar PDF -->
     <div class="no-print fixed bottom-6 right-6 z-50">
-        <button onclick="window.print()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3  px-6 rounded-full shadow-xl transition-all duration-200 transform hover:scale-105 flex items-center gap-2 cursor-pointer">
+        <button onclick="window.print()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 px-6 rounded-full shadow-xl transition-all duration-200 transform hover:scale-105 flex items-center gap-2 cursor-pointer">
             📥 Guardar Documento como PDF
         </button>
     </div>
@@ -28,379 +28,482 @@
     <div class="max-w-5xl mx-auto p-4 sm:p-10 md:p-16">
         
         <!-- HEADER DEL DOCUMENTO -->
-        <header class="border-b-4 border-indigo-600 pb-8 mb-10">
+        <header class="border-b-4 border-emerald-600 pb-8 mb-10">
             <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                 <div>
-                    <span class="bg-indigo-100 text-indigo-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm uppercase tracking-wider">Documento de Arquitectura y Negocio</span>
+                    <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-sm uppercase tracking-wider">Documento de Arquitectura y Negocio Local</span>
                     <h1 class="text-3xl font-black text-slate-900 tracking-tight sm:text-4xl mt-2">
-                        Especificación Detallada de Micro-SaaS
+                        10 Micro-SaaS Validados para Colombia
                     </h1>
                     <p class="text-lg text-slate-600 mt-1 font-medium">
-                        Modelos automáticos de negocio validados para Vibe Coding con el stack <strong class="text-indigo-600">.NET + Angular + SQL</strong>.
+                        Especificación técnica hiper-detallada para optimizar desarrollo ágil asistido por IA (<span class="text-emerald-600">Vibe Coding</span>) usando <strong class="text-emerald-600">.NET 8 + Angular + SQL</strong>.
                     </p>
                 </div>
                 <div class="bg-white border border-slate-200 rounded-lg p-4 text-xs font-mono text-slate-500 shadow-xs min-w-[240px]">
-                    <p class="font-bold text-slate-800 mb-1">🛠️ STACK ARQUITECTÓNICO:</p>
-                    <p>• Backend: .NET 8 / Web API / Workers</p>
-                    <p>• Frontend: Angular 17+ Standalone</p>
-                    <p>• Datos: PostgreSQL o SQL Server</p>
-                    <p>• Enfoque: Asíncrono / Cero Soporte</p>
+                    <p class="font-bold text-slate-800 mb-1">🇨🇴 CONTEXTO LOCAL:</p>
+                    <p>• Cumplimiento DIAN / UGPP</p>
+                    <p>• Pasarelas locales e internacionales</p>
+                    <p>• Arquitectura desacoplada en C#</p>
+                    <p>• UI/UX simplificada en Angular</p>
                 </div>
             </div>
         </header>
 
-        <!-- INTRODUCCIÓN Y MITIGACIÓN DE RIESGOS DEL EQUIPO -->
-        <section class="bg-indigo-950 text-white rounded-2xl p-6 sm:p-8 mb-12 shadow-lg relative overflow-hidden">
-            <div class="relative z-10">
-                <h2 class="text-xl font-bold mb-3 flex items-center gap-2 text-yellow-400">
-                    💡 Alineación Estratégica para el Equipo de Ingeniería
-                </h2>
-                <p class="text-sm text-indigo-100 leading-relaxed mb-4">
-                    Tomando en cuenta los puntos críticos discutidos por el equipo en el chat—<strong>el miedo a que el cliente no tenga conocimiento técnico</strong> y <strong>el dolor de cabeza de mantener Scraping cuando cambian las interfaces</strong>—este blueprint elimina la sobre-ingeniería y redefine las integraciones para blindar al equipo del mantenimiento eterno.
-                </p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mt-2">
-                    <div class="bg-indigo-900/50 p-3 rounded-lg border border-indigo-700/50">
-                        <strong class="text-yellow-300 block mb-1">🔒 Solución a la fricción del cliente:</strong>
-                        Los flujos se automatizan por completo en el backend (vía OAuth o Webhooks). El usuario final solo "conecta" sus cuentas una vez y el sistema corre solo en background.
-                    </div>
-                    <div class="bg-indigo-900/50 p-3 rounded-lg border border-indigo-700/50">
-                        <strong class="text-yellow-300 block mb-1">🛡️ Solución al Scraping Frágil:</strong>
-                        Se descarta el parseo visual de HTML. Nos enfocamos en interceptar los endpoints API internos ocultos de las plataformas u orquestadores, reduciendo el mantenimiento a cero.
-                    </div>
-                </div>
-            </div>
+        <!-- INTRODUCCIÓN Y MITIGACIÓN DE RIESGOS EN COLOMBIA -->
+        <section class="bg-slate-900 text-white rounded-2xl p-6 sm:p-8 mb-12 shadow-lg relative overflow-hidden">
+            <h2 class="text-xl font-bold mb-3 flex items-center gap-2 text-emerald-400">
+                ⚡ Estrategia de Ingeniería: Blindaje Técnico y Simplicidad Operativa
+            </h2>
+            <p class="text-sm text-slate-300 leading-relaxed mb-4">
+                En el mercado colombiano, los dos mayores riesgos para un equipo de software son la volatilidad de los proveedores tecnológicos estatales/locales y la fricción por la baja alfabetización digital de algunos clientes B2B. Este documento detalla la arquitectura exacta para que los 10 productos corran de manera autónoma, consumiendo APIs estructuradas por debajo y protegiendo al equipo de mantenimientos interminables.
+            </p>
         </section>
 
-        <!-- CUERPO CENTRAL: LOS 5 PRODUCTOS A DETALLE -->
+        <!-- LISTADO DE LOS 10 PRODUCTOS A DETALLE -->
         <main class="space-y-12">
 
             <!-- PRODUCTO 1 -->
-            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card transition-all duration-200 hover:border-slate-300">
-                <div class="bg-slate-900 p-4 sm:p-6 text-white flex justify-between items-center">
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-md">01</span>
-                        <h2 class="text-xl font-bold tracking-tight">Conector Automatizado de Facturación Electrónica Local</h2>
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">01</span>
+                        <h2 class="text-xl font-bold tracking-tight">Conector de Facturación Electrónica DIAN para Pasarelas Globales</h2>
                     </div>
-                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Viabilidad: Alta</span>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Media</span>
                 </div>
-                
                 <div class="p-6 sm:p-8 space-y-6">
-                    <!-- Mercado -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
                         <p class="text-sm text-slate-700 font-medium">
-                            Creadores de contenido, academias online, freelancers internacionales y agencias de marketing digital que residen localmente pero procesan sus ventas con pasarelas de pago extranjeras (Stripe, Lemon Squeezy o Shopify). Sus contadores les exigen emitir factura electrónica local por cada ingreso.
+                            Creadores de contenido, agencias digitales, startups colombianas, e-commerces que venden al exterior usando Stripe, Shopify o Lemon Squeezy pero están obligados a legalizar cada venta en Colombia emitiendo factura electrónica legal.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 1:</strong> Una academia colombiana vende cursos en todo el mundo a través de Shopify. Cada vez que entra un pago internacional, el sistema emite automáticamente la factura legal correspondiente ante la DIAN mediante Alegra.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Una academia online en Bogotá vende cursos en LATAM vía Shopify. El conector toma la venta y emite la factura en la DIAN mediante la API de Alegra de forma transparente.
                             </div>
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 2:</strong> Un desarrollador independiente vende un SaaS corporativo a empresas de EE.UU. usando Stripe. El conector genera y legaliza el documento tributario local sin obligar al desarrollador a digitar datos a mano a fin de mes.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Un freelancer en Medellín que cobra un SaaS mensual por Stripe a clientes en EE.UU. Su contador le exige facturar electrónicamente cada dólar convertido a COP según la TRM.
                             </div>
                         </div>
                     </div>
-
-                    <!-- Paso a paso -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
                         <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
-                            <li>El usuario inicia sesión en la interfaz de <strong>Angular</strong> mediante Google Auth y registra las credenciales API de su facturador local (ej. Alegra, Siigo).</li>
-                            <li>La plataforma le genera una URL única de Webhook y un secreto de firma que el usuario pega en su panel de Stripe/Shopify.</li>
-                            <li>Cuando ocurre una venta, Stripe dispara un POST HTTPS con el evento <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">invoice.paid</code> hacia la <strong>.NET Web API</strong>.</li>
-                            <li>La Minimal API de .NET valida la firma criptográfica del webhook, extrae los datos básicos (email, monto, descripción) y los guarda inmediatamente en una tabla SQL como "Cola de Procesamiento" respondiendo un HTTP 200 de inmediato a Stripe para evitar penalizaciones por tiempo.</li>
-                            <li>Un <strong>.NET Background Service (Worker)</strong> toma el registro de la cola de forma asíncrona, consume la API del facturador local mapeando los campos requeridos, genera el documento fiscal y actualiza el estado a "Procesado con éxito".</li>
+                            <li>El cliente asocia en <strong>Angular</strong> sus API keys del proveedor de facturación (Alegra, Siigo o Facturatech).</li>
+                            <li>Registra en Stripe la URL del Webhook generada de forma única por tu backend en <strong>.NET</strong>.</li>
+                            <li>Al efectuarse un cobro, Stripe envía un JSON asíncrono con el evento <code class="font-mono text-xs bg-slate-200 px-1 rounded">invoice.paid</code>.</li>
+                            <li>La Minimal API de .NET valida la autenticidad de la firma del webhook, guarda el payload en SQL y le responde inmediatamente a Stripe un HTTP 200.</li>
+                            <li>Un <strong>.NET Background Worker</strong> encolado toma la información, calcula la TRM contable del día y consume la API del facturador local para formalizar el documento.</li>
                         </ol>
                     </div>
-
-                    <!-- Detalles Técnicos e Integración -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
-                            <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">⚙️ Integraciones y Dificultad Técnica</h5>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                <strong>Dificultad: Media.</strong> La integración con Stripe es trivial gracias a su SDK oficial. El reto real radica en la variabilidad y mala documentación de las APIs de facturación locales. <br><br>
-                                <span class="block mt-1 font-semibold text-slate-800">Estrategia de Código:</span> Crear en .NET una interfaz genérica <code class="bg-white px-1 rounded border text-slate-700 font-mono">IFacturacionProvider</code>. El MVP se implementa únicamente para un proveedor (ej: Alegra). Si el día de mañana un cliente pide integrarse con Siigo, el equipo solo escribe una nueva clase concreta que implemente la interfaz, sin alterar el núcleo de la aplicación.
-                            </p>
-                        </div>
-                        <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
-                            <p class="font-bold text-yellow-400 mb-2 uppercase">📦 NuGet & Componentes del Stack:</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Stripe.net:</span> Manejo y validación de firmas de eventos webhooks.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">System.Net.Http.Json:</span> Serialización rápida hacia APIs externas.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Angular UI:</span> Formulario con validación de estados de API keys.</p>
-                            <p>• <span class="text-indigo-400">EF Core + SQL:</span> Cola transaccional resiliente.</p>
-                        </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">Stripe.net:</span> Parseo criptográfico. • <span class="text-emerald-400">IFacturacionService:</span> Interfaz en C# para aislar la lógica y soportar múltiples proveedores locales sin alterar el Core. • <span class="text-emerald-400">Angular Component:</span> Panel simple para mapeo de impuestos (IVA 19%, Exento, etc.).</p>
                     </div>
                 </div>
             </article>
 
             <!-- PRODUCTO 2 -->
-            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card transition-all duration-200 hover:border-slate-300">
-                <div class="bg-slate-900 p-4 sm:p-6 text-white flex justify-between items-center">
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-md">02</span>
-                        <h2 class="text-xl font-bold tracking-tight">"Wrappers" de IA para Extracción y Auditoría Estructurada</h2>
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">02</span>
+                        <h2 class="text-xl font-bold tracking-tight">Auditor de Cuentas de Cobro e Inhabilidades con IA</h2>
                     </div>
-                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Viabilidad: Alta</span>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja - Media</span>
                 </div>
-                
                 <div class="p-6 sm:p-8 space-y-6">
-                    <!-- Mercado -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
                         <p class="text-sm text-slate-700 font-medium">
-                            Firmas de contadores independientes, bufetes de abogados medianos, agencias inmobiliarias y departamentos de compras o recursos humanos que pierden decenas de horas semanales extrayendo datos clave de documentos físicos, escaneados o PDFs heterogéneos para pasarlos a plantillas de Excel o sistemas CRM internos.
+                            Departamentos de contabilidad e infraestructura de Recursos Humanos en empresas colombianas que contratan masivamente por prestación de servicios y pierden días validando formatos de cuentas de cobro, RUT y antecedentes penales/fiscales.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 1 (Contable):</strong> Un despacho contable recibe mensualmente 500 cuentas de cobro y facturas en fotos de WhatsApp. Las suben en masa al sistema y este les devuelve un Excel con columnas limpias: NIT, Nombre, Retenciones, Impuesto e Importe Total.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Una empresa de logística con 300 contratistas externos recibe las cuentas de cobro mensuales. El sistema extrae los datos y valida de forma automática que correspondan con el RUT cargado.
                             </div>
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 2 (Legal/Inmobiliario):</strong> Una agencia de arrendamientos sube 50 contratos de alquiler extensos en PDF. El sistema lee el contenido y extrae de forma automática el valor del canon, la fecha de reajuste, las identificaciones de los codeudores y las penalidades por incumplimiento.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Validación en un solo clic de antecedentes en Procuraduría, Contraloría y Policía de un tercero antes de aprobar un desembolso corporativo.
                             </div>
                         </div>
                     </div>
-
-                    <!-- Paso a paso -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
                         <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
-                            <li>El usuario abre el dashboard en <strong>Angular</strong> y arrastra una carpeta de archivos o múltiples documentos usando un componente de Drag & Drop con barra de progreso.</li>
-                            <li>Los archivos se envían mediante un objeto <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">MultipartFormData</code> a la <strong>.NET Web API</strong>.</li>
-                            <li>El controlador en .NET procesa la carga con <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">IFormFile</code>, utiliza librerías nativas de bajo consumo para extraer el texto plano del PDF (o envía la imagen directamente si se procesa con modelos de visión multimodal).</li>
-                            <li>El backend consume la API de OpenAI/Anthropic utilizando obligatoriamente la propiedad <strong>Structured Outputs (JSON Schema)</strong>. Le pasamos una clase fuertemente tipada de C# como molde para obligar a la IA a responder estrictamente en un formato JSON estructurado, evitando alucinaciones o textos conversacionales.</li>
-                            <li>El JSON devuelto por la IA se procesa en el backend mediante librerías de hojas de cálculo, generando un archivo físico binario <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">.xlsx</code> que se envía inmediatamente como un flujo de descarga a Angular.</li>
+                            <li>El contratista o contador arrastra la cuenta de cobro en PDF o foto en la app de <strong>Angular</strong>.</li>
+                            <li>La Web API en <strong>.NET</strong> procesa el archivo con <code class="font-mono text-xs bg-slate-200 px-1 rounded">IFormFile</code> y extrae los caracteres planos del documento.</li>
+                            <li>Se consume la API de OpenAI/Anthropic configurando la propiedad <strong class="text-emerald-600">Structured Outputs (JSON Schema)</strong> para transformar el texto libre en una estructura C# rígida con campos como: CuentaBancaria, ValorEscrito, ValorNumero, PeriodoCotizado, NIT.</li>
+                            <li>El backend valida las reglas matemáticas básicas (ej: que el valor numérico coincida con el texto y que el RUT sea válido).</li>
+                            <li>Guarda los datos en base de datos SQL y genera el reporte consolidado descargable para el módulo de tesorería.</li>
                         </ol>
                     </div>
-
-                    <!-- Detalles Técnicos e Integración -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
-                            <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">⚙️ Integraciones y Dificultad Técnica</h5>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                <strong>Dificultad: Baja - Media.</strong> La integración con los modelos de lenguajes modernos es sumamente sencilla y predecible. Como el cliente "no tiene conocimiento técnico" (punto crítico del chat), la interfaz de Angular debe ser ultra limpia: un solo botón gigante para subir archivos y descargar resultados. <br><br>
-                                <span class="block mt-1 font-semibold text-slate-800">Mitigación de riesgos:</span> El peligro real es que los usuarios suban PDFs masivos (de 80MB) que saturen la memoria RAM de la Web API. La solución técnica es limitar el tamaño del archivo en Angular y en el middleware de .NET, o procesar archivos grandes guardándolos temporalmente en disco y orquestándolos mediante una estructura de hilos asíncronos nativos (<code class="bg-white px-1 rounded border text-slate-700 font-mono">System.Threading.Channels</code>).
-                            </p>
-                        </div>
-                        <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
-                            <p class="font-bold text-yellow-400 mb-2 uppercase">📦 NuGet & Componentes del Stack:</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Azure.AI.OpenAI:</span> SDK oficial para conectarse a OpenAI de manera fuertemente tipada.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">EPPlus o ClosedXML:</span> Generación y formateo nativo de archivos Excel OpenXML en memoria.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">PdfSharp / iTextSharp:</span> Lectores rápidos de capas de texto en PDFs.</p>
-                            <p>• <span class="text-indigo-400">Angular Dropzone:</span> Manejo estético de la carga de archivos en el cliente.</p>
-                        </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">Azure.AI.OpenAI:</span> Mapeo JSON estructurado y tipado. • <span class="text-emerald-400">ClosedXML / EPPlus:</span> Generador dinámico del reporte consolidador de pagos en Excel. • <span class="text-emerald-400">Angular File Upload:</span> Control visual de estados de procesamiento.</p>
                     </div>
                 </div>
             </article>
 
             <!-- PRODUCTO 3 -->
-            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card transition-all duration-200 hover:border-slate-300">
-                <div class="bg-slate-900 p-4 sm:p-6 text-white flex justify-between items-center">
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-md">03</span>
-                        <h2 class="text-xl font-bold tracking-tight">Monitor Inteligente de Precios y Quiebre de Stock B2B</h2>
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">03</span>
+                        <h2 class="text-xl font-bold tracking-tight">Monitor de Inventario y Precios de Mayoristas de Tecnología / Retail</h2>
                     </div>
-                    <span class="text-xs font-semibold bg-amber-500/20 text-amber-400 px-2.5 py-1 rounded-sm border border-amber-500/30">Viabilidad: Media</span>
+                    <span class="text-xs font-semibold bg-amber-500/20 text-amber-400 px-2.5 py-1 rounded-sm border border-amber-500/30">Dificultad: Alta</span>
                 </div>
-                
                 <div class="p-6 sm:p-8 space-y-6">
-                    <!-- Mercado -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
                         <p class="text-sm text-slate-700 font-medium">
-                            Empresas de e-commerce, agencias de dropshipping, distribuidores mayoristas de tecnología o suministros médicos y comercializadores de hardware que necesitan reaccionar inmediatamente cuando sus competidores cambian precios, o cuando los grandes importadores vuelven a tener stock disponible para comprar en volumen antes de que se agote.
+                            Comercializadores de tecnología (Unilago, Pasaje Calixto), distribuidores de autopartes, tiendas de dropshipping local en plataformas como Dropi o Hoko que dependen críticamente de los inventarios de grandes importadores.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 1 (Hardware/Tecnología):</strong> Un distribuidor local de hardware necesita saber el segundo exacto en que el principal importador mayorista vuelve a tener existencias de un procesador de alta demanda para ejecutar una compra automática mediante su sistema.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Un vendedor de componentes de PC necesita saber el instante exacto en que MPS o Impresistemas habilitan stock de tarjetas de video de alta gama para comprarlas de inmediato.
                             </div>
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 2 (Comercio Electrónico):</strong> Una tienda de retail en línea automatiza el monitoreo de los 10 productos más vendidos por su competidor principal en Amazon o en su e-commerce propio para ajustar de forma dinámica sus estrategias comerciales de precios cada mañana.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Una tienda de comercio electrónico rastrea fluctuaciones de precios en grandes superficies (Éxito, Alkosto) para mantener competitiva su propia estrategia de precios digitales.
                             </div>
                         </div>
                     </div>
-
-                    <!-- Paso a paso -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
                         <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
-                            <li>El cliente ingresa en el dashboard de <strong>Angular</strong> los enlaces específicos de los productos de los proveedores clave que desea vigilar y configura sus umbrales de precio o stock.</li>
-                            <li>Un motor de tareas programadas en el backend (<strong class="text-indigo-600">Quartz.NET</strong>) despierta un Job asíncrono de manera cíclica cada 15 minutos en segundo plano.</li>
-                            <li>La tarea en .NET simula una petición de navegador directo hacia los endpoints JSON de la API oculta del e-commerce objetivo (en lugar de descargar el HTML visual, garantizando estabilidad total).</li>
-                            <li>El sistema compara el precio capturado en el JSON con el registro previo almacenado en la base de datos <strong>SQL</strong>.</li>
-                            <li>Si se detecta un quiebre de stock (el inventario pasó de 0 a >0) o el precio cayó por debajo del límite configurado, el backend formatea un mensaje estructurado y consume la API de Telegram o WhatsApp Cloud para disparar una alerta push en tiempo real al teléfono del comprador.</li>
+                            <li>El comerciante define las URLs específicas de los productos objetivo dentro del panel de <strong>Angular</strong>.</li>
+                            <li>Un orquestador de hilos de background en .NET (<strong class="text-emerald-600">Quartz.NET</strong>) dispara consultas cíclicas automáticas cada 10 minutos.</li>
+                            <li>Para evitar que el código se rompa si cambia el HTML visual, el backend simula peticiones interceptando la API REST interna (JSON) de la plataforma objetivo (obtenida previamente mediante la pestaña Network del inspector).</li>
+                            <li>El Worker evalúa los datos obtenidos contra el historial de la base de datos <strong>SQL</strong>.</li>
+                            <li>Si el inventario pasa de 0 a positivo, gatilla un llamado HTTP asíncrono hacia un bot corporativo de Telegram o la API de WhatsApp Cloud notificando al equipo.</li>
                         </ol>
                     </div>
-
-                    <!-- Detalles Técnicos e Integración -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
-                            <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">⚙️ Integraciones y Dificultad Técnica</h5>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                <strong>Dificultad: Alta (por mantenimiento de terceros).</strong> Como bien discutió tu equipo en el chat: <em>"el tema de scraping si cambia la interfaz se vuelve un dolor de cabeza"</em>. Tienen toda la razón del mundo. Romper selectores CSS destruye el software.<br><br>
-                                <span class="block mt-1 font-semibold text-slate-800">Estrategia de Mitigación Total:</span> Queda estrictamente prohibido parsear HTML visual. El equipo debe usar las herramientas de desarrollo de Chrome (pestaña *Network*) en la fase de investigación para descubrir la API REST interna que usa el front-end de la tienda objetivo. Las APIs de las tiendas rara vez cambian porque romperían sus propias aplicaciones móviles. Adicionalmente, se debe integrar un servicio de rotación de proxies residenciales (como *ScrapingBee* o *ProxyCrawl*) en el <code class="bg-white px-1 rounded border text-slate-700 font-mono">HttpClientFactory</code> de .NET para saltarse de manera 100% automática las protecciones de Cloudflare o los bloqueos por dirección IP.
-                            </p>
-                        </div>
-                        <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
-                            <p class="font-bold text-yellow-400 mb-2 uppercase">📦 NuGet & Componentes del Stack:</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Quartz.NET:</span> Orquestador industrial para la ejecución asíncrona de los hilos de monitoreo.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">IHttpClientFactory:</span> Manejo óptimo de conexiones HTTP reutilizables y rotación de encabezados.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">System.Text.Json:</span> Deserialización veloz de las APIs ocultas mapeadas.</p>
-                            <p>• <span class="text-indigo-400">SQL Server/Postgres:</span> Almacenamiento histórico e indexación de precios.</p>
-                        </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">IHttpClientFactory:</span> Gestión robusta de conexiones HTTP concurrentes. • <span class="text-emerald-400">Rotación de Proxies:</span> Integración de proxys residenciales en el cliente HTTP para evadir sistemas antibot de Cloudflare. • <span class="text-emerald-400">Quartz.NET:</span> Motor industrial de planificación temporal.</p>
                     </div>
                 </div>
             </article>
 
             <!-- PRODUCTO 4 -->
-            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card transition-all duration-200 hover:border-slate-300">
-                <div class="bg-slate-900 p-4 sm:p-6 text-white flex justify-between items-center">
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-md">04</span>
-                        <h2 class="text-xl font-bold tracking-tight">Generador de Documentos Estéticos y Certificados Bajo Demanda</h2>
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">04</span>
+                        <h2 class="text-xl font-bold tracking-tight">Generador Masivo de Certificados, Diplomas y Contratos Legales</h2>
                     </div>
-                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Viabilidad: Alta</span>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja</span>
                 </div>
-                
                 <div class="p-6 sm:p-8 space-y-6">
-                    <!-- Mercado -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
                         <p class="text-sm text-slate-700 font-medium">
-                            Startups tecnológicas, plataformas de educación en línea (EdTech), aplicaciones corporativas de recursos humanos (HRTech) o pasarelas locales de software de facturación que necesitan delegar la generación masiva de archivos PDF de altísima calidad gráfica sin sobrecargar de cómputo sus servidores web principales.
+                            Instituciones educativas intermedias, academias de cursos técnicos, inmobiliarias locales y cooperativas financieras colombianas que necesitan automatizar la emisión masiva de PDFs de alta calidad legal y gráfica.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 1 (EdTech):</strong> Una plataforma de e-learning emite 10,000 diplomas personalizados al día en época de graduación. En lugar de procesarlos en sus propios servidores (lo que ralentizaría la carga web de los estudiantes), llaman a tu API enviando el listado de alumnos en segundos.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1 (EdTech):</strong> Una escuela de marketing digital emite de golpe 3,000 diplomas personalizados en formato vectorial al finalizar una cohorte académica.
                             </div>
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 2 (Inmobiliario/Fintech):</strong> Una aplicación de préstamos en línea genera contratos legales personalizados de 15 páginas rellenando las firmas de los clientes y cláusulas contractuales de forma masiva en background.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2 (Inmobiliaria):</strong> Generación masiva de contratos de arrendamiento o pagarés financieros rellenando automáticamente datos de clientes y linderos a partir de estructuras JSON.
                             </div>
                         </div>
                     </div>
-
-                    <!-- Paso a paso -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
                         <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
-                            <li>El cliente corporativo crea plantillas en tu panel de <strong>Angular</strong> usando un editor simple o estructurando un diseño HTML/CSS parametrizado (ej: <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">{{Nombre}}</code>).</li>
-                            <li>La plataforma cliente realiza una petición POST segura (usando un Bearer Token generado en tu sistema) enviando un JSON con los valores dinámicos y el identificador de la plantilla.</li>
-                            <li>La Minimal API de <strong>.NET 8</strong> valida la autenticación del token, descuenta el crédito correspondiente de la cuenta del usuario y procesa la inyección de los datos en memoria.</li>
-                            <li>Un motor nativo de compilación en .NET toma la estructura lógica y la transforma en un flujo binario vectorial de PDF (sin necesidad de abrir instancias pesadas y lentas de navegadores ocultos como Puppeteer).</li>
-                            <li>El archivo PDF se aloja en un almacenamiento en la nube (AWS S3 o Azure Blob Storage) y la API responde de inmediato con un JSON limpio que incluye la URL pública y segura del documento generado de forma permanente.</li>
+                            <li>El administrador empresarial diseña y guarda la plantilla parametrizada empleando componentes reactivos en <strong>Angular</strong>.</li>
+                            <li>El sistema del cliente realiza un llamado seguro tipo POST (autenticado por Bearer Token JWT) enviando un array de objetos con las variables dinámicas del documento.</li>
+                            <li>La Minimal API de <strong>.NET 8</strong> intercepta la petición, realiza el control transaccional del balance de créditos del usuario en SQL Server/Postgres y delega la tarea de renderizado.</li>
+                            <li>Un motor nativo en C# compila el código lógico y estructural del documento generando un flujo de bytes directo de PDF (sin requerir motores externos pesados de Node o Chrome en segundo plano).</li>
+                            <li>El backend aloja de forma asíncrona los binarios en la nube (AWS S3 o Azure Blobs) y retorna de inmediato la URL segura de descarga masiva.</li>
                         </ol>
                     </div>
-
-                    <!-- Detalles Técnicos e Integración -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
-                            <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">⚙️ Integraciones y Dificultad Técnica</h5>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                <strong>Dificultad: Baja.</strong> Es un microservicio puro y duro de infraestructura B2B. Al estar desacoplado de las operaciones principales de tus clientes, el soporte es casi nulo. El único punto crítico es el rendimiento de hardware ante ráfagas concurrentes de peticiones masivas de generación.<br><br>
-                                <span class="block mt-1 font-semibold text-slate-800">Secreto de Optimización de .NET:</span> Queda prohibido usar generadores basados en Node.js o wrappers pesados de C++ antiguos. Utilizaremos **QuestPDF**, una librería moderna y revolucionaria para .NET que compila documentos maquetados por código nativo en C# a velocidades absurdas (más de 1,000 páginas por segundo por núcleo de CPU), garantizando un consumo mínimo de RAM y costos de infraestructura ridículamente bajos en la nube.
-                            </p>
-                        </div>
-                        <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
-                            <p class="font-bold text-yellow-400 mb-2 uppercase">📦 NuGet & Componentes del Stack:</p>
-                            <p class="mb-1">• <span class="text-indigo-400">QuestPDF:</span> Motor de maquetación y renderizado vectorial hiper-rápido en .NET nativo.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">AWSSDK.S3 / Azure.Storage.Blobs:</span> Conectores oficiales para la subida asíncrona de archivos binarios.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">.NET Minimal APIs:</span> El motor de endpoints HTTP más rápido del mercado para microservicios.</p>
-                            <p>• <span class="text-indigo-400">Angular UI:</span> Panel administrativo para gestión de llaves API y consumo de tokens.</p>
-                        </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">QuestPDF:</span> Biblioteca líder absoluta en .NET. Compila miles de páginas vectoriales por segundo con un consumo de RAM ínfimo. • <span class="text-emerald-400">AWS SDK S3:</span> Guardado seguro y asíncrono en la nube. • <span class="text-emerald-400">Angular Panel:</span> Administrador para la gestión integral de consumo y límites de API.</p>
                     </div>
                 </div>
             </article>
 
             <!-- PRODUCTO 5 -->
-            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card transition-all duration-200 hover:border-slate-300">
-                <div class="bg-slate-900 p-4 sm:p-6 text-white flex justify-between items-center">
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
                     <div class="flex items-center gap-3">
-                        <span class="bg-indigo-600 text-white font-black text-sm px-3 py-1 rounded-md">05</span>
-                        <h2 class="text-xl font-bold tracking-tight">Gateway Unificado de Notificaciones Críticas y OTP</h2>
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">05</span>
+                        <h2 class="text-xl font-bold tracking-tight">Gateway Unificado de Alertas Críticas, OTP y Mensajería Local</h2>
                     </div>
-                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Viabilidad: Alta</span>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja - Media</span>
                 </div>
-                
                 <div class="p-6 sm:p-8 space-y-6">
-                    <!-- Mercado -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
                         <p class="text-sm text-slate-700 font-medium">
-                            Aplicaciones móviles financieras (Fintech) locales, plataformas SaaS con autenticación de dos factores (2FA), sistemas de agendamiento de citas médicas o empresas de logística de última milla que necesitan enviar códigos temporales o alertas operativas sumamente urgentes sin desgastar a sus equipos integrando y monitoreando por separado a múltiples proveedores de telefonía y correo.
+                            Fintechs locales, cooperativas de ahorro y crédito, pasarelas de software logístico y plataformas médicas de agendamiento que necesitan notificar de urgencia códigos OTP o estados de transacciones de forma centralizada.
                         </p>
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 1 (Fintech):</strong> Una wallet digital necesita enviar un código OTP de validación para una transferencia bancaria de inmediato por SMS y Correo de forma simultánea para garantizar redundancia y seguridad en la transacción.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1 (Fintech):</strong> Un neobanco requiere despachar un código de verificación (2FA) instantáneo por SMS y correo en paralelo para autenticar el retiro de fondos de un usuario.
                             </div>
-                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-slate-400">
-                                <strong>Ejemplo 2 (Logística):</strong> Una app de repartos notifica al cliente que su paquete está a 5 minutos de llegar, despachando de manera unificada y automática un mensaje estructurado por WhatsApp corporativo y correo electrónico.
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2 (Logística):</strong> Una aplicación de entregas notifica de forma masiva y unificada la confirmación de la ruta del mensajero por WhatsApp Corporativo y correo electrónico.
                             </div>
                         </div>
                     </div>
-
-                    <!-- Paso a paso -->
                     <div>
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
                         <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
-                            <li>El sistema cliente realiza un llamado POST hacia tu API de <strong>.NET</strong> enviando un objeto estandarizado: <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">{ "destino": "+573...", "mensaje": "Código: 123", "canales": ["sms", "whatsapp"] }</code>.</li>
-                            <li>La Web API en .NET valida los tokens de autenticación del integrador y comprueba la disponibilidad de créditos financieros en la base de datos <strong>SQL</strong>.</li>
-                            <li>Utilizando inyección de dependencias avanzada en C#, el servicio backend orquesta la petición y ejecuta en paralelo el despacho multihilo usando el comando asíncrono nativo de alto rendimiento <code class="bg-slate-200 px-1 py-0.5 rounded text-xs font-mono text-slate-800">Task.WhenAll()</code>.</li>
-                            <li>Las tareas distribuyen los payloads de forma paralela e instantánea hacia las APIs de los operadores subyacentes económicos (ej: Twilio para SMS/WhatsApp, Resend para correos transaccionales).</li>
-                            <li>Tu API recibe de vuelta los webhooks asíncronos de confirmación de entrega de los operadores ("Entregado con éxito", "Número Inválido"), actualiza el estado de las métricas en SQL y el cliente visualiza todo en tiempo real en un panel estadístico desarrollado en <strong>Angular</strong>.</li>
+                            <li>El sistema externo del cliente ejecuta un POST seguro enviando las instrucciones de destino de la alerta crítica a tu endpoint de <strong>.NET</strong>.</li>
+                            <li>La Web API realiza la validación criptográfica y comprueba el balance de créditos corporativos en las tablas indexadas de la base de datos <strong>SQL</strong>.</li>
+                            <li>El backend de C# orquesta el despacho multihilo en paralelo haciendo uso nativo del comando asíncrono de alto rendimiento <code class="font-mono text-xs bg-slate-200 px-1 rounded">Task.WhenAll()</code>.</li>
+                            <li>Las subtareas en background disparan las solicitudes de forma simultánea hacia los APIs de proveedores globales económicos integrados (Twilio para SMS, WhatsApp Cloud API y Resend para correos).</li>
+                            <li>El sistema recibe las confirmaciones de entrega asíncronas de los operadores telefónicos actualizando las tablas de analítica visibles en un módulo estadístico diseñado en <strong>Angular</strong>.</li>
                         </ol>
                     </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">Polly:</span> Middleware de .NET fundamental. Configura reintentos exponenciales automáticos y políticas de contingencia (*Fallback*) si el operador primario telefónico sufre caídas de red. • <span class="text-emerald-400">Twilio SDK:</span> Conexión estable. • <span class="text-emerald-400">ngx-charts:</span> Renderización visual en Angular de estadísticas de entrega.</p>
+                    </div>
+                </div>
+            </article>
 
-                    <!-- Detalles Técnicos e Integración -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
-                        <div class="bg-indigo-50/50 p-4 rounded-xl border border-indigo-100">
-                            <h5 class="text-xs font-bold text-indigo-900 uppercase tracking-wider mb-2">⚙️ Integraciones y Dificultad Técnica</h5>
-                            <p class="text-xs text-slate-600 leading-relaxed">
-                                <strong>Dificultad: Baja - Media.</strong> La integración técnica con SDKs modernos como Twilio o pasarelas de correo como Resend es sumamente predecible. El verdadero reto técnico radica en la resiliencia del sistema: si la API de un operador de SMS se cae a nivel global, tu microservicio no puede fallarle al neobanco cliente ni perder el mensaje de verificación en tránsito.<br><br>
-                                <span class="block mt-1 font-semibold text-slate-800">Estrategia de Resiliencia Industrial:</span> Implementaremos en el backend de .NET la librería **Polly**. Configuraremos una política de reintentos asíncronos con tiempo de espera exponencial (*Exponential Backoff*). Si tras 3 intentos el operador primario sigue caído, Polly ejecutará una política de contingencia (*Fallback*) desviando el mensaje de texto de manera 100% automática a un operador secundario de respaldo preconfigurado en tu código, garantizando disponibilidad absoluta del 99.99%.
-                            </p>
+            <!-- PRODUCTO 6 -->
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">06</span>
+                        <h2 class="text-xl font-bold tracking-tight">Validador de Afiliaciones de Salud y Seguridad Social (B2B HR)</h2>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Media - Alta</span>
+                </div>
+                <div class="p-6 sm:p-8 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <p class="text-sm text-slate-700 font-medium">
+                            Empresas con alta rotación de personal operativo (obras civiles, aseo, seguridad, manufactura) que por ley de la UGPP colombiana deben verificar rigurosamente que las planillas de PILA, aportes a EPS, ARL y AFP de sus subcontratistas sean reales y estén activas antes de permitirles el ingreso físico a las instalaciones.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Una constructora en Cali recibe 150 operarios en una obra nueva. El sistema lee en masa los archivos de seguridad social del mes y cruza los datos con la base integrada para validar pagos reales.
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Validación automatizada de los certificados emitidos por Sura, Colpatria o Colpensiones para certificar que el contratista no esté en estado "Suspendido".
+                            </div>
                         </div>
-                        <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
-                            <p class="font-bold text-yellow-400 mb-2 uppercase">📦 NuGet & Componentes del Stack:</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Polly:</span> El estándar de la industria en .NET para manejo de fallas, reintentos y tolerancia a errores.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Twilio / Twilio.AspNet.Core:</span> SDK oficial para la conexión estable y escucha de webhooks de entrega.</p>
-                            <p class="mb-1">• <span class="text-indigo-400">Angular Charts (ngx-charts):</span> Biblioteca visual para renderizar las analíticas de envío de las empresas.</p>
-                            <p>• <span class="text-indigo-400">Task.WhenAll:</span> Programación multihilo nativa para paralelismo puro sin bloqueos.</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <li>El departamento de seguridad o talento humano accede al portal corporativo web diseñado en <strong>Angular</strong> y carga las planillas de seguridad social cargadas por los terceros.</li>
+                            <li>La API en <strong>.NET</strong> captura el documento binario y extrae el texto usando librerías nativas de procesamiento de documentos y reconocimiento óptico básico de caracteres.</li>
+                            <li>Un servicio de background procesa los NITs y nombres contenidos, y mediante llamadas automatizadas consulta las APIs expuestas u ocultas de los operadores de información (como Aportes en Línea o miPILA).</li>
+                            <li>El backend en .NET valida mediante lógica interna de negocio si los periodos pagados coinciden aritméticamente con las fechas de ejecución del contrato.</li>
+                            <li>Actualiza las tablas relacionales de la base de datos <strong>SQL</strong> y despliega semáforos de alerta visuales (Verde/Rojo) en el frontend del cliente.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">PdfSharp / Tesseract OCR NuGet:</span> Extracción rápida de texto estructurado de planillas impresas. • <span class="text-emerald-400">System.Text.Json:</span> Mapeo de respuestas de validación. • <span class="text-emerald-400">Angular Signals:</span> Actualización en tiempo real de los semáforos de acceso sin recargar la interfaz.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 7 -->
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">07</span>
+                        <h2 class="text-xl font-bold tracking-tight">Centralizador y Formateador Estético de Webhooks para Canales de Chat</h2>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja</span>
+                </div>
+                <div class="p-6 sm:p-8 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <p class="text-sm text-slate-700 font-medium">
+                            Agencias de marketing digital locales, equipos de desarrollo de software y gerencias comerciales que necesitan monitorear en tiempo real alertas operativas complejas en canales de Slack o Discord de forma visual y unificada sin configurar integraciones individuales pesadas.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Una agencia recibe una alerta de venta en Hotmart de un infoproducto de $500,000 COP; el sistema intercepta el JSON complejo y publica una tarjeta de felicitación visual en el Discord de soporte.
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Monitoreo de caídas de servidores o registros de formularios de leads en HubSpot, transformando objetos pesados de datos en alertas de chat limpias y comprensibles para personal no técnico.
+                            </div>
                         </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <li>El usuario se registra en la plataforma web mediante un componente limpio estructurado en <strong>Angular</strong> y copia un endpoint HTTP dinámico autogenerado.</li>
+                            <li>Pega esa URL única en la plataforma externa que desea monitorear (Hotmart, Stripe, GitHub, etc.).</li>
+                            <li>Al dispararse un evento, la Minimal API de <strong>.NET 8</strong> captura el body en crudo de la solicitud entrante analizando los encabezados HTTP para deducir el origen exacto del remitente.</li>
+                            <li>Un servicio interno en C# descarta la información redundante, extrae las variables clave y formatea un objeto JSON estructurado bajo el estándar de bloques visuales exigido por las APIs de Slack o Discord.</li>
+                            <li>Despacha la solicitud formateada de manera asíncrona hacia el canal de chat destino, registrando métricas operativas básicas en la base de datos <strong>SQL</strong>.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">.NET Minimal APIs:</span> Rendimiento extremo para el procesamiento veloz de ráfagas de webhooks en caliente. • <span class="text-emerald-400">System.Text.Json (JsonDocument):</span> Inspección dinámica de JSONs sin requerir clases mapeadas previas. • <span class="text-emerald-400">HttpClientFactory:</span> Reutilización de canales HTTP salientes.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 8 -->
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">08</span>
+                        <h2 class="text-xl font-bold tracking-tight">Acortador Inteligente de Enlaces con Redirección por Ubicación y Geolocalización</h2>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja - Media</span>
+                </div>
+                <div class="p-6 sm:p-8 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <p class="text-sm text-slate-700 font-medium">
+                            Especialistas en Growth Marketing, organizadores de eventos presenciales masivos y marcas nacionales que ejecutan campañas multiciudad y necesitan desviar de forma inteligente el tráfico móvil a URLs o números de WhatsApp locales diferenciados según la procedencia del clic.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Un enlace impreso en un empaque a nivel nacional desvía al cliente al WhatsApp de soporte de la sucursal de Bogotá si el clic se hace desde Cundinamarca, o al canal de Medellín si se hace desde Antioquia.
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Campañas de cupones de descuento optimizadas para desviar al usuario móvil a la landing page de la tienda física más cercana basados en la geolocalización de su dirección IP de red.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <li>El estratega de marketing configura el enlace corto en la interfaz de <strong>Angular</strong> y define las reglas lógicas jerárquicas de redirección por regiones o ciudades.</li>
+                            <li>La Minimal API de <strong>.NET 8</strong> captura el tráfico entrante del enlace corto respondiendo en tiempos de respuesta ínfimos inferiores a los 15 milisegundos.</li>
+                            <li>El backend captura la dirección IP pública de la solicitud HTTP y consulta en memoria una base de datos local de geolocalización indexada de alta velocidad.</li>
+                            <li>Registra la métrica analítica de procedencia de forma asíncrona en las tablas de la base de datos <strong>SQL</strong> para no demorar la experiencia del usuario.</li>
+                            <li>Responde de inmediato al navegador del cliente emitiendo una directiva nativa rápida de redirección HTTP 302 hacia la URL real mapeada para esa zona geográfica.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">MaxMind.GeoIP2 NuGet:</span> Base de datos binaria gratuita que se corre directo en la memoria del servidor de .NET para descifrar la ubicación de la IP sin llamadas HTTP lentas. • <span class="text-emerald-400">Results.Redirect():</span> Método nativo de alto desempeño de Minimal APIs. • <span class="text-emerald-400">Angular Dashboards:</span> Panel visual con gráficas regionales de clics.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 9 -->
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">09</span>
+                        <h2 class="text-xl font-bold tracking-tight">Validador de Sintaxis, Existencia y Registros MX de Correos B2B</h2>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja</span>
+                </div>
+                <div class="p-6 sm:p-8 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <p class="text-sm text-slate-700 font-medium">
+                            Plataformas SaaS de marketing, e-commerces nacionales medianos y organizadores de seminarios virtuales que sufren altas tasas de rebote y penalizaciones en servidores de correo porque sus usuarios digitan correos falsos, temporales o inexistentes en los formularios de registro.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Un formulario de captura de leads en una landing page valida en 200 milisegundos que el correo ingresado no pertenezca a un dominio de correos desechables o temporales.
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Verificación en el backend de un sistema de registro de usuarios corporativos para asegurar que el dominio del email de la empresa tenga servidores activos de correo capaces de recibir mensajes reales.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <li>El sistema cliente integra tu endpoint de verificación rápida en caliente dentro de sus formularios o llamadas de servidor.</li>
+                            <li>La Minimal API de <strong>.NET 8</strong> recibe el texto del email, aplica un filtro inicial estricto de sintaxis mediante expresiones regulares de alta velocidad.</li>
+                            <li>Cruza el dominio del correo electrónico contra una lista negra local almacenada e indexada en la base de datos <strong>SQL</strong> que contiene miles de dominios temporales conocidos.</li>
+                            <li>Utiliza los componentes de red nativos de C# (<code class="font-mono text-xs bg-slate-200 px-1 rounded">System.Net.Dns</code>) para realizar una consulta DNS en tiempo real verificando la existencia de registros tipo MX válidos para el servidor de destino.</li>
+                            <li>Responde de forma inmediata devolviendo una estructura JSON estructurada y limpia indicando la viabilidad del correo: <code class="font-mono text-xs bg-slate-200 px-1 rounded">{ "isValid": true, "type": "corporate" }</code>.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">System.Net.Dns:</span> Consultas DNS de resolución de nombres a nivel de infraestructura nativa de red sin librerías de terceros. • <span class="text-emerald-400">RegularExpressions (Compiled):</span> Optimización del motor de Regex en .NET para procesamiento ultrarrápido bajo escenarios de alta concurrencia. • <span class="text-emerald-400">Angular Component Mocks:</span> Documentación web interactiva en Angular para desarrolladores.</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PRODUCTO 10 -->
+            <article class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden project-card">
+                <div class="bg-slate-950 p-4 sm:p-6 text-white flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-emerald-600 text-white font-black text-sm px-3 py-1 rounded-md">10</span>
+                        <h2 class="text-xl font-bold tracking-tight">Automatizador de Copias de Seguridad de Configuración y Datos entre Plataformas SaaS</h2>
+                    </div>
+                    <span class="text-xs font-semibold bg-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-sm border border-emerald-500/30">Dificultad: Baja - Media</span>
+                </div>
+                <div class="p-6 sm:p-8 space-y-6">
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">🎯 Nicho de Mercado y Ejemplos Reales</h4>
+                        <p class="text-sm text-slate-700 font-medium">
+                            Empresas medianas de consultoría, agencias de diseño web y equipos digitales corporativos en Colombia que centralizan su gestión de proyectos en herramientas basadas en la nube como Notion, Trello, Asana o Jira, y requieren por directivas internas de auditoría de IT resguardar respaldos físicos y locales semanales de sus datos corporativos.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs text-slate-600">
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 1:</strong> Un equipo de desarrollo de software automatiza la descarga integral de todos los tableros y discusiones de Trello una vez por semana comprimiéndolos en un archivo unificado dentro de su OneDrive corporativo de Microsoft de forma transparente.
+                            </div>
+                            <div class="bg-slate-50 p-3 rounded-lg border-l-4 border-emerald-500">
+                                <strong>Ejemplo 2:</strong> Resguardo y archivado seguro de bases de datos completas de Notion en formato estructurado JSON/Markdown para blindar a la empresa de pérdidas accidentales de datos por manipulación de usuarios.
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-bold uppercase tracking-wider text-emerald-600 mb-2">📋 Paso a Paso del Flujo de Datos</h4>
+                        <ol class="text-sm text-slate-700 space-y-2 list-decimal list-inside bg-slate-50 p-4 rounded-xl border border-slate-200/60">
+                            <li>El cliente corporativo inicia sesión en tu aplicación en <strong>Angular</strong> y realiza el proceso de autenticación segura vía OAuth de las cuentas origen y destino que desea vincular.</li>
+                            <li>La configuración de permisos y tokens de acceso cifrados se almacena con medidas de seguridad robustas en la base de datos de <strong>SQL</strong>.</li>
+                            <li>Un componente recurrente de background (<strong class="text-emerald-600">Quartz.NET</strong>) planifica y despierta tareas programadas independientes y aisladas para cada cliente de forma semanal.</li>
+                            <li>El backend en <strong>.NET</strong> realiza llamadasHTTP paginadas a las APIs REST oficiales de origen (Notion/Asana), descarga los metadatos y ficheros adjuntos vinculados, y hace uso de las librerías nativas del sistema para compilar un archivo comprimido <code class="font-mono text-xs bg-slate-200 px-1 rounded">.zip</code> estructurado de forma directa en la memoria RAM del servidor.</li>
+                            <li>Consume la API de almacenamiento de destino (Google Drive o OneDrive de Microsoft) subiendo el archivo de respaldo generado y actualiza los registros e historiales del sistema.</li>
+                        </ol>
+                    </div>
+                    <div class="bg-slate-900 p-4 rounded-xl text-xs font-mono text-slate-300">
+                        <p class="font-bold text-yellow-400 mb-2 uppercase">⚙️ Componentes & NuGets Clave:</p>
+                        <p>• <span class="text-emerald-400">System.IO.Compression:</span> Empaquetado, compresión y manipulación nativa de archivos binarios comprimidos .zip directo en flujos de memoria de .NET sin dependencias externas. • <span class="text-emerald-400">Quartz.NET:</span> Orquestación temporal. • <span class="text-emerald-400">Google.Apis.Drive.v3 NuGet:</span> Conector oficial e integrado para la administración e inyección remota de ficheros en la nube de Google.</p>
                     </div>
                 </div>
             </article>
 
         </main>
 
-        <!-- METODOLOGÍA DE REPARTO DE TRABAJO EN EQUIPO -->
+        <!-- PLAN DE EJECUCIÓN ÁGIL EN PARALELO -->
         <section class="mt-16 bg-slate-900 text-slate-100 rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-xl">
             <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                👥 Estrategia de Trabajo Dividido para "Vibe Coding" Eficiente
+                👥 Metodología Operativa de Desarrollo para el Equipo de Ingeniería
             </h3>
             <p class="text-sm text-slate-300 leading-relaxed mb-6">
-                Como equipo que domina .NET y Angular, la IA les permitirá avanzar a velocidades absurdas si dividen la arquitectura desde el día uno bajo un esquema de <strong>Contratos de API estrictos</strong>. Así pueden programar en paralelo sin pisarse los cables:
+                Para maximizar los resultados empleando la metodología de **Vibe Coding** con herramientas de Inteligencia Artificial asistida (como Cursor o Windsurf), el equipo debe estructurar el ciclo de desarrollo aislando las responsabilidades a través de un contrato de API REST rígido antes de generar los archivos:
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
                 <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/60">
-                    <strong class="text-indigo-400 block text-sm font-semibold mb-2">1. Fase de Contrato (En Común)</strong>
-                    Antes de codear, definan el diseño de las tablas en SQL y los endpoints REST de la API. Escriban un archivo JSON simple con los payloads de entrada y salida esperados. Esto le dará el contexto perfecto a la IA para trabajar por separado.
+                    <strong class="text-emerald-400 block text-sm font-semibold mb-2">1. Fase de Definición</strong>
+                    Modelen las tablas en SQL y los payloads JSON de entrada y salida de las Minimal APIs. Al proveerle un esquema tipado exacto a la IA, su capacidad de generación de código útil se incrementa en un 95%, evitando errores lógicos o de estructura.
                 </div>
                 <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/60">
-                    <strong class="text-indigo-400 block text-sm font-semibold mb-2">2. Front-End (Desarrollador A)</strong>
-                    Utiliza herramientas como Cursor enfocadas exclusivamente en la carpeta de Angular. Gracias al contrato de API definido, le pide a la IA estructurar las vistas, las tablas, el manejo de tokens JWT y la barra de carga usando mocks estáticos de datos.
+                    <strong class="text-emerald-400 block text-sm font-semibold mb-2">2. Front-End (Angular)</strong>
+                    Se alimenta del contrato de API. La IA puede estructurar componentes reactivos desacoplados, interceptores de tokens JWT, validaciones de formularios con Tailwind CSS y mocks estáticos sin depender de que el backend esté finalizado.
                 </div>
                 <div class="bg-slate-800 p-4 rounded-xl border border-slate-700/60">
-                    <strong class="text-indigo-400 block text-sm font-semibold mb-2">3. Back-End (Desarrollador B)</strong>
-                    Se enfoca en la solución de .NET 8. Le pide a la IA escribir las Minimal APIs, las migraciones de Entity Framework, la resiliencia con Polly o las tareas de background con Quartz.NET. Al estar tipado, la IA comete cero errores de compilación en C#.
+                    <strong class="text-emerald-400 block text-sm font-semibold mb-2">3. Back-End (.NET 8)</strong>
+                    Desarrolla el núcleo de la aplicación de forma fuertemente tipada. El uso de C# reduce los errores de compilación de los agentes de IA a cero. Enfóquenlo en inyección de dependencias, lógica transaccional, resiliencia con Polly y tareas en background de Quartz.NET.
                 </div>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-800 text-center text-xs text-yellow-400 font-medium">
-                🚀 En el día 6 se unen ambos mundos conectando las URLs del backend al HttpClient de Angular y el día 7 el MVP se despliega en producción.
+                🚀 Integración: En el día 6 del ciclo de desarrollo se conectan los servicios reales del HttpClient de Angular al endpoint del backend y en el día 7 el MVP se encuentra desplegado y validado en servidores de producción.
             </div>
         </section>
 
         <!-- FOOTER DEL DOCUMENTO -->
         <footer class="mt-12 border-t border-slate-200 pt-6 text-center text-xs text-slate-400">
-            <p>Documento técnico confidencial generado para planeación de arquitectura de software y análisis de viabilidad comercial.</p>
+            <p>Estrategia de arquitectura de software y análisis de viabilidad comercial local. Documento de uso corporativo interno.</p>
         </footer>
 
     </div>
